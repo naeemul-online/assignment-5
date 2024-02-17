@@ -109,7 +109,7 @@
 
     </header>
     <!-- Main Start -->
-    <main class="min-w-[1170px] font-raleway">
+    <main class="min-w-[1170px] mx-auto font-raleway">
         <!-- Cards Container -->
         <div class="mx-[130px]">
             <!-- Best Offer Section -->
@@ -161,6 +161,7 @@
             </section>
         </div>
 
+        <!-- P.H Paribahn Start Element -->
         <section class="border-t-2 bg-[#F7F8F8] rounded-t-3xl">
             <!-- Paribahan title start -->
             <div class="text-center mt-32 font-bold ">
@@ -171,7 +172,7 @@
 
             <!-- Greenline Paribahhan Card Start -->
 
-            <div class="card h-[400px] flex flex-row justify-between mx-[130px] bg-[#fff]">
+            <div class="card flex flex-row justify-between mx-[130px] bg-[#fff]">
                 <div class="w-4/6 m-8">
                     <div class="flex justify-between">
                         <!-- Bus logo container -->
@@ -185,15 +186,26 @@
                             </div>
                         </div>
                         <div class="flex items-center border-2 bg-[#1DD10026] rounded-xl p-4 cursor-pointer">
-                           <div> <img src="./images/seat-green.png" alt=""></div>
+                            <div> <img src="./images/seat-green.png" alt=""></div>
                             <p class="text-xl text-green-400 font-bold ml-2 font-inter">40 Seats left</p>
                         </div>
-                        
+
                     </div>
-                    <div class="h-48 bg-[#F7F8F8] rounded-3xl p-8">
-                        <div>
+                    <div class="bg-[#F7F8F8] rounded-3xl p-8 mt-4">
+                        <div class="flex justify-between mb-4">
                             <h2>Route</h2>
-                        <h2>Dhaka-Sylhet</h2>
+                            <h2>Dhaka-Sylhet</h2>
+                        </div>
+                        <hr>
+                        <div class="flex justify-between my-4">
+                            <h2>Departure Time</h2>
+                            <h2>9:00 PM</h2>
+                        </div>
+                        <hr>
+                        <div class="flex justify-around mt-4">
+                            <p class="text-inter bg p-2 text-xl bg-[#0307120D] rounded-xl">Boarding Point - Laxmipur</p>
+                            <p class="text-inter bg p-2 text-xl bg-[#0307120D] rounded-xl">Dropping Point - Bogura</p>
+                            <p class="text-inter bg p-2 text-xl bg-[#0307120D] rounded-xl">Est. Time - 11 Hour</p>
                         </div>
                     </div>
 
@@ -201,11 +213,110 @@
                 </div>
                 <div><img src="./images/info-devider.png" alt="">
                 </div>
-                <div>
-                    <h2>500 Taka</h2>
+                <div class="flex items-center justify-center flex-col mr-14">
+                    <img src="./images/fare.png" alt="">
+                    <div class="text-center mt-4">
+                        <span class="text-3xl font-bold">500 Taka</span><br>
+                        <span class="text-xl font-bold text-gray-400">Per Taka</span>
+                    </div>
                 </div>
             </div>
+
+            <!-- Select Your Sit Section -->
+            <section class="mx-[130px] bg-[#fff] p-4 mt-7 rounded-xl grid grid-cols-3">
+
+                <!-- Selected Sit Element -->
+                <div class="selected-sit col-span-2">
+                    <h class="text-2xl text-black font-extrabold ">Select your seat</h>
+                    <div class=" flex justify-between p-4 cursor-pointer border-y-2  border-dashed my-4">
+                        <div class="flex items-center ">
+                            <div> <img src="./images/seat-gray.png" alt=""></div>
+                            <p class="text-lg text-gray-400 ml-2 font-inter">Available</p>
+                        </div>
+                        <div class="flex items-center ">
+                            <div> <img src="./images/seat-green.png" alt=""></div>
+                            <p class="text-lg text-green-400 ml-2 font-inter ">Available</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end">
+                        <button class="bg-gray-200 px-6 py-2 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path
+                                    d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333"
+                                    stroke="#030712" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Seat layout -->
+                    <div class="grid grid-cols-5 text-center gap-12  mt-4">
+                        <kbd class="bg-none text-left"><span class="mr-0">A</span></kbd>
+                        <kbd class="kbd"><span class="">A1</span></kbd>
+                        <kbd class="kbd"><span class="">A2</span></kbd>
+                        <kbd class="kbd"><span class="">A3</span></kbd>
+                        <kbd class="kbd"><span class="">A4</span></kbd>
+                        <kbd class="bg-none text-left"><span class="">B</span></kbd>
+                        <kbd class="kbd"><span class="">B1</span></kbd>
+                        <kbd class="kbd"><span class="">B2</span></kbd>
+                        <kbd class="kbd"><span class="">B3</span></kbd>
+                        <kbd class="kbd"><span class="">B4</span></kbd>
+                        <kbd class="bg-none text-left"><span class="">C</span></kbd>
+                        <kbd class="kbd"><span class="">C1</span></kbd>
+                        <kbd class="kbd"><span class="">C2</span></kbd>
+                        <kbd class="kbd"><span class="">C3</span></kbd>
+                        <kbd class="kbd"><span class="">C4</span></kbd>
+                        <kbd class="bg-none text-left"><span class="">D</span></kbd>
+                        <kbd class="kbd"><span class="">D1</span></kbd>
+                        <kbd class="kbd"><span class="">D2</span></kbd>
+                        <kbd class="kbd"><span class="">D3</span></kbd>
+                        <kbd class="kbd"><span class="">D4</span></kbd>
+                        <kbd class="bg-none text-left"><span class="">E</span></kbd>
+                        <kbd class="kbd"><span class="">E1</span></kbd>
+                        <kbd class="kbd"><span class="">E2</span></kbd>
+                        <kbd class="kbd"><span class="">E3</span></kbd>
+                        <kbd class="kbd"><span class="">E4</span></kbd>
+                        <kbd class="bg-none text-left"><span class="">F</span></kbd>
+                        <kbd class="kbd"><span class="">F1</span></kbd>
+                        <kbd class="kbd"><span class="">F2</span></kbd>
+                        <kbd class="kbd"><span class="">F3</span></kbd>
+                        <kbd class="kbd"><span class="">F4</span></kbd>
+                        <kbd class="bg-none text-left"><span class="">G</span></kbd>
+                        <kbd class="kbd"><span class="">G1</span></kbd>
+                        <kbd class="kbd"><span class="">G2</span></kbd>
+                        <kbd class="kbd"><span class="">G3</span></kbd>
+                        <kbd class="kbd"><span class="">G4</span></kbd>
+                        <kbd class="bg-none text-left"><span class="">H</span></kbd>
+                        <kbd class="kbd"><span class="">H1</span></kbd>
+                        <kbd class="kbd"><span class="">H2</span></kbd>
+                        <kbd class="kbd"><span class="">H3</span></kbd>
+                        <kbd class="kbd"><span class="">H4</span></kbd>
+                        <kbd class="bg-none text-left"><span class="">I</span></kbd>
+                        <kbd class="kbd"><span class="">I1</span></kbd>
+                        <kbd class="kbd"><span class="">I2</span></kbd>
+                        <kbd class="kbd"><span class="">I3</span></kbd>
+                        <kbd class="kbd"><span class="">I4</span></kbd>
+                        <kbd class="bg-none text-left"><span class="">J</span></kbd>
+                        <kbd class="kbd"><span class="">J1</span></kbd>
+                        <kbd class="kbd"><span class="">J2</span></kbd>
+                        <kbd class="kbd"><span class="">J3</span></kbd>
+                        <kbd class="kbd"><span class="">J4</span></kbd>
+                    </div>
+
+
+                </div>
+                <!-- Price Elements -->
+                <div class="border">
+                    <h2>Select Your Seat</h2>
+                    <p>Prices</p>
+                </div>
+
+            </section>
         </section>
+
+
     </main>
 
     <!-- Footer start -->
