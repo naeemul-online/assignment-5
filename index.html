@@ -335,22 +335,29 @@
                                     </tr>
                                 </tfoot>
                             </table>
-                            <div class="">
-                                <input type="text" class="w-2/3 border p-4" placeholder="coupon">
-                                <button class="bg-green-400 p-4">APPLY</button>
+                            <div class="" id="apply-input-container">
+                                <input type="text" class="w-2/3 border p-4" id="coupon" placeholder="coupon">
+                                <button id="coupon-apply-btn" class="bg-green-400 p-4">APPLY</button>
                             </div>
 
                             <table class="table">
                                 <!-- head -->
-
-                                <tbod class="text-black">
-
+                              
+                                <tbody class="text-black">                                   
+                                    <tr id="discount-total-container" class="hidden">
+                                        <th>Discount Total</th>
+                                        <th></th>
+                                        <th>BDT<span class="ml-1" id="discount-total"></span></th>
+                                    </tr>
                                     <tr>
                                         <th>Grand Total</th>
                                         <th></th>
                                         <th>BDT<span class="ml-1" id="grand-total"></span></th>
-                                    </tr>
-                                </tbod>
+                                    </tr>                                   
+                                </tbody>
+                                <tfoot>
+                                   
+                                </tfoot>
                             </table>
 
                             <form>
@@ -376,7 +383,8 @@
                                         class="input input-bordered w-full max-w-xs" />
                                 </label>
                                 <br>
-                                <submit class="btn bg-[#1DD100] w-full text-white">Next</submit>
+
+                                <submit id="next-btn" class="btn bg-[#1DD100] w-full text-white">Next</submit>
                                 <div>
                                     <a href="">Terms and Conditions</a> <a href="">Cancellation Policy</a>
                                 </div>
