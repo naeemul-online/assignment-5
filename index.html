@@ -98,10 +98,8 @@
                         <h2 class="card-title text-6xl font-extrabold text-[#1DD100]">P Paribahan</h2>
                         <p class="text-center text-lg font-inter">Yes, you can run unit tests and view the results
                             directly within the app. The <br> integrated testing features allow for a streamlined .</p>
-                        <div class="card-actions flex justify-center">
-                            <button class="btn border-0 font-bold text-xl bg-[#1DD100]">Buy Tickets</button>
-                        </div>
-                    </div>
+                        <a href="#tickets-section" class="border-0 font-bold text-xl bg-[#1DD100] p-2 rounded-lg scroll-smooth">Buy Tickets</a>
+                        
                 </div>
             </div>
 
@@ -223,7 +221,7 @@
             </div>
 
             <!-- Select Your Sit Section -->
-            <section class="mx-[130px] bg-[#fff] p-4 mt-7 rounded-xl grid grid-cols-3">
+            <section class="mx-[130px] bg-[#fff] p-4 mt-7 rounded-xl grid grid-cols-3" id="tickets-section">
 
                 <!-- Selected Sit Element -->
                 <div class="selected-sit col-span-2">
@@ -252,68 +250,147 @@
                     </div>
 
                     <!-- Seat layout -->
-                    <div class="grid grid-cols-5 text-center gap-12  mt-4">
-                        <kbd class="bg-none text-left"><span class="mr-0">A</span></kbd>
-                        <kbd class="kbd"><span class="">A1</span></kbd>
-                        <kbd class="kbd"><span class="">A2</span></kbd>
-                        <kbd class="kbd"><span class="">A3</span></kbd>
-                        <kbd class="kbd"><span class="">A4</span></kbd>
-                        <kbd class="bg-none text-left"><span class="">B</span></kbd>
-                        <kbd class="kbd"><span class="">B1</span></kbd>
-                        <kbd class="kbd"><span class="">B2</span></kbd>
-                        <kbd class="kbd"><span class="">B3</span></kbd>
-                        <kbd class="kbd"><span class="">B4</span></kbd>
-                        <kbd class="bg-none text-left"><span class="">C</span></kbd>
-                        <kbd class="kbd"><span class="">C1</span></kbd>
-                        <kbd class="kbd"><span class="">C2</span></kbd>
-                        <kbd class="kbd"><span class="">C3</span></kbd>
-                        <kbd class="kbd"><span class="">C4</span></kbd>
-                        <kbd class="bg-none text-left"><span class="">D</span></kbd>
-                        <kbd class="kbd"><span class="">D1</span></kbd>
-                        <kbd class="kbd"><span class="">D2</span></kbd>
-                        <kbd class="kbd"><span class="">D3</span></kbd>
-                        <kbd class="kbd"><span class="">D4</span></kbd>
-                        <kbd class="bg-none text-left"><span class="">E</span></kbd>
-                        <kbd class="kbd"><span class="">E1</span></kbd>
-                        <kbd class="kbd"><span class="">E2</span></kbd>
-                        <kbd class="kbd"><span class="">E3</span></kbd>
-                        <kbd class="kbd"><span class="">E4</span></kbd>
-                        <kbd class="bg-none text-left"><span class="">F</span></kbd>
-                        <kbd class="kbd"><span class="">F1</span></kbd>
-                        <kbd class="kbd"><span class="">F2</span></kbd>
-                        <kbd class="kbd"><span class="">F3</span></kbd>
-                        <kbd class="kbd"><span class="">F4</span></kbd>
-                        <kbd class="bg-none text-left"><span class="">G</span></kbd>
-                        <kbd class="kbd"><span class="">G1</span></kbd>
-                        <kbd class="kbd"><span class="">G2</span></kbd>
-                        <kbd class="kbd"><span class="">G3</span></kbd>
-                        <kbd class="kbd"><span class="">G4</span></kbd>
-                        <kbd class="bg-none text-left"><span class="">H</span></kbd>
-                        <kbd class="kbd"><span class="">H1</span></kbd>
-                        <kbd class="kbd"><span class="">H2</span></kbd>
-                        <kbd class="kbd"><span class="">H3</span></kbd>
-                        <kbd class="kbd"><span class="">H4</span></kbd>
-                        <kbd class="bg-none text-left"><span class="">I</span></kbd>
-                        <kbd class="kbd"><span class="">I1</span></kbd>
-                        <kbd class="kbd"><span class="">I2</span></kbd>
-                        <kbd class="kbd"><span class="">I3</span></kbd>
-                        <kbd class="kbd"><span class="">I4</span></kbd>
-                        <kbd class="bg-none text-left"><span class="">J</span></kbd>
-                        <kbd class="kbd"><span class="">J1</span></kbd>
-                        <kbd class="kbd"><span class="">J2</span></kbd>
-                        <kbd class="kbd"><span class="">J3</span></kbd>
-                        <kbd class="kbd"><span class="">J4</span></kbd>
-                    </div>
-
-
-                </div>
+                    <div class="grid grid-cols-5 text-center gap-4  mt-4 text-lg font-medium">
+                        <kbd class=" bg-none">A</kbd>
+                        <kbd class="kbd">A1</kbd>
+                        <kbd class="kbd">A2</kbd>
+                        <kbd class="kbd">A3</kbd>
+                        <kbd class="kbd">A4</kbd>
+                        <kbd class="bg-none">B</kbd>
+                        <kbd class="kbd" id="B1">B1</span></kbd>
+                        <kbd class="kbd" id="B2">B2</span></kbd>
+                        <kbd class="kbd" id="B3">B3</span></kbd>
+                        <kbd class="kbd" id="B4">B4</span></kbd>
+                        <kbd class="bg-none">C</span></kbd>
+                        <kbd class="kbd" id="C1">C1</span></kbd>
+                        <kbd class="kbd" id="C2">C2</span></kbd>
+                        <kbd class="kbd" id="C3">C3</span></kbd>
+                        <kbd class="kbd" id="C4">C4</span></kbd>
+                        <kbd class="bg-none">D</span></kbd>
+                        <kbd class="kbd" id="D1">D1</span></kbd>
+                        <kbd class="kbd" id="D2">D2</span></kbd>
+                        <kbd class="kbd" id="D3">D3</span></kbd>
+                        <kbd class="kbd" id="D4">D4</span></kbd>
+                        <kbd class="bg-none">E</span></kbd>
+                        <kbd class="kbd" id="E1">E1</span></kbd>
+                        <kbd class="kbd" id="E2">E2</span></kbd>
+                        <kbd class="kbd" id="E3">E3</span></kbd>
+                        <kbd class="kbd" id="E4">E4</span></kbd>
+                        <kbd class="bg-none">F</span></kbd>
+                        <kbd class="kbd" id="F1">F1</span></kbd>
+                        <kbd class="kbd" id="F2">F2</span></kbd>
+                        <kbd class="kbd" id="F3">F3</span></kbd>
+                        <kbd class="kbd" id="F4">F4</span></kbd>
+                        <kbd class="bg-none">G</span></kbd>
+                        <kbd class="kbd" id="G1">G1</span></kbd>
+                        <kbd class="kbd" id="G2">G2</span></kbd>
+                        <kbd class="kbd" id="G3">G3</span></kbd>
+                        <kbd class="kbd" id="G4">G4</span></kbd>
+                        <kbd class="bg-none">H</span></kbd>
+                        <kbd class="kbd" id="H1">H1</span></kbd>
+                        <kbd class="kbd" id="H2">H2</span></kbd>
+                        <kbd class="kbd" id="H3">H3</span></kbd>
+                        <kbd class="kbd" id="H4">H4</span></kbd>
+                        <kbd class="bg-none">I</span></kbd>
+                        <kbd class="kbd" id="I1">I1</span></kbd>
+                        <kbd class="kbd" id="I2">I2</span></kbd>
+                        <kbd class="kbd" id="I3">I3</span></kbd>
+                        <kbd class="kbd" id="I4">I4</span></kbd>
+                        <kbd class="bg-none">J</span></kbd>
+                        <kbd class="kbd" id="J1">J1</span></kbd>
+                        <kbd class="kbd" id="J2">J2</span></kbd>
+                        <kbd class="kbd" id="J3">J3</span></kbd>
+                        <kbd class="kbd" id="J4">J4</span></kbd>
+                    </div>                </div>
                 <!-- Price Elements -->
-                <div class="p-4 ml-2">
+                <div class="p-4 ml-2 col-span-1">
 
                     <div class="border-b-2 pb-4 border-dashed">
                         <h class="text-2xl text-black font-extrabold ">Select your seat</h>
                     </div>
-                    <div class="my-4 p-4 bg-gray-200">
+                    <div>
+                        <div class="overflow-x-auto">
+                            <table class="table">
+                              <!-- head -->
+                              <thead>
+                                <tr>
+                                  <th>Seat</th>
+                                  <th>Class</th>
+                                  <th>Price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <!-- row 1 -->
+                                <tr>
+                                  <td>C2</td>
+                                  <td>Economy</td>
+                                  <td>550</td>
+                                </tr>
+                                <!-- row 2 -->
+                                <tr>
+                                  <td>C2</td>
+                                  <td>Economy</td>
+                                  <td>550</td>
+                                </tr>
+                                <!-- row 3 -->
+                                <tr>
+                                    <th>Total Price</th>
+                                    <th></th>
+                                    <th>Price</th>
+                                </tr>                                
+                              </tbody>
+                            </table>
+                            <div class="">
+                                <input type="text" class="w-2/3 border p-4" placeholder="coupn">
+                                <button class="bg-green-400 p-4">APPLY</button>
+                            </div>
+
+                            <table class="table">
+                                <!-- head -->
+                               
+                                <tbody>
+                                  
+                                  <tr>
+                                      <th>Total Price</th>
+                                      <th></th>
+                                      <th>Price</th>
+                                  </tr>                                
+                                </tbody>
+                              </table>
+
+                              <form>
+                                <label class="form-control w-full max-w-xs">
+                                    <div class="label">
+                                        <span class="label-text">Passenger Name*</span>
+                                    </div>
+                                    <input type="text" placeholder="Enter your name"
+                                        class="input input-bordered w-full max-w-xs" />
+                                </label>
+                                <label class="form-control w-full max-w-xs">
+                                    <div class="label">
+                                        <span class="label-text">Phone Number*</span>
+                                    </div>
+                                    <input type="tel" placeholder="Enter your phone number"
+                                        class="input input-bordered w-full max-w-xs" />
+                                </label>
+                                <label class="form-control w-full max-w-xs">
+                                    <div class="label">
+                                        <span class="label-text">Email ID</span>
+                                    </div>
+                                    <input type="email" placeholder="Enter your email id"
+                                        class="input input-bordered w-full max-w-xs" />
+                                </label>
+                                <br>
+                               <submit class="btn bg-[#1DD100] w-full text-white">Next</submit>
+                                <div>
+                                    <a href="">Terms and Conditions</a> <a href="">Cancellation Policy</a>
+                                </div>
+                            </form>
+    
+                            
+                          </div>
+                    </div>
+                    <!-- <div class="my-4 p-4 bg-gray-200">
 
                         <div class="flex justify-between py-2 font-bold text-2xl font-inter ">
                             <h2 class="">Seat <span class="bg-green-400 text-white text-lg rounded">0</span></h2>
@@ -345,38 +422,40 @@
                             <h2 class="">Grand Total</h2>
                             <h2 class="">BDT 1100</h2>
                         </div>
-                        <div>
+                        
+                        
+                        
+                        <form>
                             <label class="form-control w-full max-w-xs">
                                 <div class="label">
-                                    <span class="label-text">Enter Your name: </span>
+                                    <span class="label-text">Passenger Name*</span>
                                 </div>
-                                <input type="text" placeholder="Your Name"
+                                <input type="text" placeholder="Enter your name"
                                     class="input input-bordered w-full max-w-xs" />
                             </label>
                             <label class="form-control w-full max-w-xs">
                                 <div class="label">
-                                    <span class="label-text">Enter Your name: </span>
+                                    <span class="label-text">Phone Number*</span>
                                 </div>
-                                <input type="text" placeholder="Your Name"
+                                <input type="tel" placeholder="Enter your phone number"
                                     class="input input-bordered w-full max-w-xs" />
                             </label>
                             <label class="form-control w-full max-w-xs">
                                 <div class="label">
-                                    <span class="label-text">Enter Your name: </span>
+                                    <span class="label-text">Email ID</span>
                                 </div>
-                                <input type="text" placeholder="Your Name"
+                                <input type="email" placeholder="Enter your email id"
                                     class="input input-bordered w-full max-w-xs" />
                             </label>
                             <br>
-                            <button class="btn btn-block">next</button>
-                            <br>
+                           <submit class="btn bg-[#1DD100] w-full text-white">Next</submit>
                             <div>
                                 <a href="">Terms and Conditions</a> <a href="">Cancellation Policy</a>
                             </div>
-                        </div>
+                        </form>
 
 
-                    </div>
+                    </div> -->
                 </div>
 
             </section>
