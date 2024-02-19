@@ -2,11 +2,17 @@ const seats = document.querySelectorAll(".seat");
 let count = 1;
 let leftSeatCount = 1;
 let price = 0;
+let clickCount = 0;
 
 for (const seat of seats) {
   seat.addEventListener("click", function () {
     // console.log(count);
 
+    // click count condition
+   clickCount += 1;
+   if(clickCount < 4){
+    
+   }
     // set bg
     seat.style.backgroundColor = "#1DD100";
     seat.style.color = "white";
@@ -54,6 +60,7 @@ for (const seat of seats) {
 
     const couponApplyButton = document.getElementById("coupon-apply-btn");
     couponApplyButton.addEventListener("click", function () {
+
       const couponInputUser = document
         .getElementById("coupon")
         .value.toLowerCase();
@@ -83,6 +90,10 @@ for (const seat of seats) {
           .classList.add("hidden");
       }
     });
+
+
+    // Next button access
+
 
     // minus 1 by per seat select
     // const seatsLeft = document.getElementById('seats-left');
